@@ -1,0 +1,123 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa; /* Light teal background */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Dark text for readability */
+}
+
+/* Main container */
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #ffffff; /* White background for the card */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #00796b; /* Deep teal */
+}
+
+/* Input fields */
+input {
+    width: calc(100% - 24px);
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #b2dfdb; /* Light border */
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    background-color: #00796b; /* Deep teal button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #004d40; /* Darker teal on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Error messages */
+.error {
+    color: #d32f2f; /* Red error text */
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Contact list */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #f1f8e9; /* Light green background */
+    border: 1px solid #c5e1a5; /* Subtle green border */
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+li:hover {
+    background-color: #aed581; /* Slightly darker green on hover */
+    transform: scale(1.02); /* Slight zoom effect */
+}
+
+/* Buttons in the contact list */
+li button {
+    background-color: #e53935; /* Red button for delete */
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+li button:hover {
+    background-color: #b71c1c; /* Darker red on hover */
+}
+
+/* Add contact section */
+.add-contact input {
+    display: block;
+    width: 100%;
+}
+
+.add-contact {
+    margin-bottom: 20px;
+}
+
+/* Logout button */
+button[ng-click="logout()"] {
+    background-color: #f57c00; /* Orange for logout */
+}
+
+button[ng-click="logout()"]:hover {
+    background-color: #e65100; /* Darker orange on hover */
+}
